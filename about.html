@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catalogue Management System</title>
+        <link rel="stylesheet" type="text/css" href="./cataloguesystem.css" />
+        <!-- Used this CDN for the icon's of Navbar. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- https://www.w3schools.com/howto/howto_js_topnav.asp "Navabar code referes from this site" -->
+            <nav>
+                <div class="topnavforbutton" id="nav-id">
+                    <a href="loginclient.php" class="button-nav">Login</a>
+                    <a href="signupclient.php" class="button-nav">Sign Up</a>
+                    <a href="#home" class="social-icon-link"><img src="./static/facebook.png" class="social-icon" /></a>
+                    <a href="#home" class="social-icon-link"><img src="./static/insta.jpg" class="social-icon" /></a>
+                    <a href="#home" class="social-icon-link"><img src="./static/Youtube.png" class="social-icon" /></a>
+                </div>
+                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav "Navabar responsive code referes from this site" -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="breaker"></div>
+                <div class="topnav">
+                    <a href="https://dxt5888.uta.cloud/blog/">Forum</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </nav>
+            <div class="main-about">
+                <img src="static/about.jpg" alt="About page" />
+                <h2>About The CMSs</h2>
+                <p>
+                    Our team consists of highly motivated and skilled specialists who know how to deal with any issue that you may come across. This creates a basis for lasting relationships with our clients built on trust and mutual understanding.
+                </p>
+                <br />
+                <br />
+                <br />
+            </div>
+            <footer>
+                <div class="footer">
+                    <p class="footer-paragraph">Created by Dhruv. <span class="rights-reserved">All rights Reserved</span></p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav-id");
+                if(x.style.display == "block"){
+                    x.style.display = "none";
+                }
+                else{
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

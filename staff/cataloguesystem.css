@@ -1,0 +1,193 @@
+/*  Name: (Thakkar, Dhruv Dhananjaybhai) 
+    Student Id: 1001815888 
+    Project phase: 2nd  */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.main-home{
+    text-align: center;
+}
+
+.upcoming-list-in img{
+    width: 20%;
+}
+
+.upcoming-list-in{
+    border: 1px solid red;
+    box-shadow: 2px 2px 2px lightsalmon;
+    margin: 10px;
+    padding: 10px;
+}
+
+.upcoming-list{
+    /* float: left; */
+    text-align: center;
+}
+
+.course-list{
+    float: left;
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid blue;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.rights-reserved{
+    float: right;
+}
+
+.main-about img{
+    margin-top: 10px;
+    width: 50%;
+    height: 190px;
+}
+
+.main-about p{
+    margin-bottom: 20px;
+}
+
+.breaker{
+    clear: both;
+}
+
+.main-list-top{
+    margin-bottom: 600px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* https://www.w3schools.com/howto/howto_js_topnav.asp "Navabar code referes from this site" */
+    /* Add a black background color to the top navigation */
+
+    .topnav{
+        overflow: hidden;
+        border-bottom: 1px black solid;
+        background-color: gray;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: right;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: white;
+    }
+
+    .topnavforbutton{
+        overflow: hidden;
+    }
+
+    .breaker{
+        border-bottom: 1px black solid;
+    }
+
+    .topnavforbutton a{
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: black;
+    }
+
+    .button-nav{
+        margin-right: 20px;
+        border: 1px black solid;
+    }
+
+    .social-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icon-link{
+        margin-left: 10px;
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+        background-color: gray;
+        width: 80%;
+        color: white;
+    }
+
+    .footer-paragraph{
+        padding: 1%;
+    }
+
+    .icon{
+        display: none;
+    }
+}
+
+.course-list img{
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        position: fixed;
+        bottom: 0;
+        background-color: gray;
+        width: 80%;
+        color: white;
+    }
+
+    .footer-paragraph{
+        padding: 1%;
+    }
+    .social-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .topnavforbutton{
+        display: none;
+        overflow: hidden;
+        margin-left: 40%;
+    }
+    .breaker{
+        border-bottom: 1px black solid;
+    }
+    .topnavforbutton a{
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: black;
+    }
+    /* Add a black background color to the top navigation */
+    .topnav{
+        overflow: hidden;
+        border-bottom: 1px black solid;
+        background-color: gray;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: right;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: white;
+    }
+    .icon{
+        display: block;
+    }
+}

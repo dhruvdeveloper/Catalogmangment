@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catalogue Management System</title>
+        <link rel="stylesheet" type="text/css" href="./cataloguesystem.css" />
+        <!-- Used this CDN for the icon's of Navbar. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- https://www.w3schools.com/howto/howto_js_topnav.asp "Navabar code referes from this site" -->
+            <nav>
+                <div class="topnavforbutton" id="nav-id">
+                    <a href="#home" class="social-icon-link"><img src="../static/facebook.png" class="social-icon" /></a>
+                    <a href="#home" class="social-icon-link"><img src="../static/insta.jpg" class="social-icon" /></a>
+                    <a href="#home" class="social-icon-link"><img src="../static/Youtube.png" class="social-icon" /></a>
+                    <div class="breaker"></div>
+                    <div class="topnav">
+                        <a href="users.php">Users</a>
+                        <a href="forum.html">Forum</a>
+                        <a href="about.html">About</a>
+                        <a href="index.html">Home</a>
+                    </div>
+                </div>
+                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav "Navabar responsive code referes from this site" -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <div class="main-home">
+                <h2>Contact us!</h2>
+                <br />
+                <br />
+                <br />
+                <table class="page__contactData___36tg7">
+                    <tr>
+                        <th>Email ID: </th>
+                        <td>thakkardhruv@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Cell No: </th>
+                        <td>+1 (111)-(2222)-(3333)</td>
+                    </tr>
+                </table>
+            </div>
+            <footer>
+                <div class="footer">
+                    <p class="footer-paragraph">Created by Dhruv. <span class="rights-reserved">All rights Reserved</span></p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav-id");
+                if(x.style.display == "block"){
+                    x.style.display = "none";
+                }
+                else{
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

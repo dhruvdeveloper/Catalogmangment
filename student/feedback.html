@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catalogue Management System</title>
+        <link rel="stylesheet" type="text/css" href="./cataloguesystem.css" />
+        <!-- Used this CDN for the icon's of Navbar. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="./index.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_6mlSrz2mL3CrHTAobZQdZ");
+            })();
+
+            function sendIt(){
+                var templateParams = {
+                    to_name: 'thakkardhruv97@gmail.com',
+                    from_name: 'temputawdm@gmail.com',
+                    message_html: 'Please Find out the attached file'
+                };
+
+                emailjs.send('service_yqj1e14', 'template_7r16gqi', templateParams)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                    }, function(error) {
+                    console.log('FAILED...', error);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- https://www.w3schools.com/howto/howto_js_topnav.asp "Navabar code referes from this site" -->
+            <nav>
+                <div class="topnavforbutton" id="nav-id">
+                    <a href="#home" class="social-icon-link"><img src="../static/facebook.png" class="social-icon" /></a>
+                    <a href="#home" class="social-icon-link"><img src="../static/insta.jpg" class="social-icon" /></a>
+                    <a href="#home" class="social-icon-link"><img src="../static/Youtube.png" class="social-icon" /></a>
+                    <div class="breaker"></div>
+                    <div class="topnav">
+                        <a href="feedback.html">Feedback</a>
+                        <a href="listofcourses.html">List of courses</a>
+                        <a href="https://dxt5888.uta.cloud/blog/">Forum</a>
+                        <a href="about.html">About</a>
+                        <a href="index.html">Home</a>
+                    </div>
+                </div>
+                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav "Navabar responsive code referes from this site" -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <div class="main-home">
+                <form method="POST" action="feedback.php">
+                    <h2>Feedback form!</h2>
+                    <label for="email">Professor's email address:</label>
+                    <input type="email" name="email" id="email" onkeydown="onchangeEmail()" required/><span class="error" id = "email-span"></span>
+                    <br />
+                    <label for="name">student's email address:</label>
+                    <input type="text" name="name" id="name" required/>
+                    <textarea rows="8" cols="20" name="comment" id="comment" onkeydown="onchangeText()" required></textarea><span class="error" id = "comment-span"></span>
+                    <br />
+                    <input type="submit" value="Send Email" onclick="sendIt()"/>
+                </form>
+            </div>
+            <footer>
+                <div class="footer">
+                    <p class="footer-paragraph">Created by Dhruv. <span class="rights-reserved">All rights Reserved</span></p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav-id");
+                if(x.style.display == "block"){
+                    x.style.display = "none";
+                }
+                else{
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
